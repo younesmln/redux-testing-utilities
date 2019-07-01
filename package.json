@@ -1,0 +1,37 @@
+{
+  "name": "redux-testing-utilities",
+  "version": "0.0.1",
+  "main": "dist/redux-testing-utilities.cjs.js",
+  "module": "dist/redux-testing-testing-utilities.esm.js",
+  "browser": "dist/redux-testing-testing-utilities.umd.js",
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "babel-jest": "^24.8.0",
+    "jest": "^24.8.0",
+    "rollup": "^1.16.2",
+    "rollup-plugin-babel": "^4.3.3",
+    "rollup-plugin-commonjs": "^10.0.0",
+    "rollup-plugin-node-resolve": "^5.1.0",
+    "lodash.merge": "^4.6.1"
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "test": "jest",
+    "pretest": "yarn run build"
+  },
+  "files": [
+    "dist"
+  ],
+  "peerDependencies": {
+    "redux": "^4.0.1"
+  },
+  "test": {
+    "moduleDirectories": [
+      "node_modules",
+      "src"
+    ]
+  }
+}
