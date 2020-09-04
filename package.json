@@ -14,7 +14,7 @@
     "rollup-plugin-babel": "^4.3.3",
     "rollup-plugin-commonjs": "^10.0.0",
     "rollup-plugin-node-resolve": "^5.1.0",
-    "lodash.merge": "^4.6.1"
+    "lodash.merge": "^4.6.2"
   },
   "scripts": {
     "build": "rollup -c",
